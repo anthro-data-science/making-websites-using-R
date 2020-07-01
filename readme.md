@@ -6,7 +6,7 @@ This workshop was based on materials prepared by [Alison Hill](https://alison.rb
 
 ### 1. Finding your way around R and RStudio (DG)
 - Check everyone could download and open R & RStudio
-- Check version numbers for R (we want 4.0.0)
+- Check version numbers for R (we want 4.0.2)
 - A brief tour of the main panes (Console, Files, Environ, text editor, pkgs and help) 
 - Have to make sure everyone can make the console work before we move on, e.g. console as a calculator 
 - Backup: https://rstudio.cloud/ with blogdown and hugo (note: need to set relativeurls = true in config.toml)
