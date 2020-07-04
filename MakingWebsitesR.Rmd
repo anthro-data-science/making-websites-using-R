@@ -1,0 +1,170 @@
+---
+title: "**Making Websites in R**"
+subtitle: 
+author: "Delaney Glass and Ben Marwick"
+institute: "University of Washington, Seattle, WA"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: ["default", "rladies", "rladies-fonts"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library(fontawesome) #use this for fa icons
+library(remedy)
+```
+class: center, middle
+
+#**Stay in Touch!**
+
+[`r fa(name = "paper-plane")` dglass1@uw.edu](mailto:dglass1@uw.edu)   
+[`r fa(name = "twitter")` @GlassDelaney](http://twitter.com/GlassDelaney)</br>
+[`r fa(name = "github")` dglassuw](https://github.com/dglassuw)</br> 
+[`r fa(name = "paper-plane")` bmarwick.edu](mailto:bmarwick@uw.edu)</br>
+[`r fa(name = "twitter")` @benmarwick](http://twitter.com/benmarwick)</br>
+[`r fa(name = "github")` benmarwick](https://github.com/benmarwick) 
+
+---
+background-image: url(https://p0.piqsels.com/preview/750/797/301/business-women-collaborate-collaboration-cooperation.jpg)
+
+class: inverse, left, top
+
+#**Let's get started!**
+
+---
+
+class: bottom, right
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/wocintechchat/25392390163" title="wocintech (microsoft) - 42"><img src="https://live.staticflickr.com/1444/25392390163_b8392b85db_n.jpg" width="320" height="214" alt="wocintech (microsoft) - 42"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+![image of Rstudio](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/RStudio_logo_flat.svg/320px-RStudio_logo_flat.svg.png)
+***
+<section style="text-align:left;">
+#First things first
+- _Download R & [Rstudio](https://rstudio.com/)_
+- _Alternatively, [Rstudio Cloud](https://rstudio.cloud/)_
+- _Make a free account at [Netlify](https://www.netlify.com/)_ 
+
+---
+class: inverse
+#**NEXT**
+
+<section style="text-align:left;">
+- _Create a new project in R, name it "website-practice"_
+
+- _Note down where it's saved_
+
+
+![gif](https://media.giphy.com/media/RfFto9pWcJJKcawD2A/giphy.gif)
+
+---
+class: inverse, left
+#**Tools in our Toolkit**
+
+Also known as packages & addins!
+--
+<section style="text-align:center;">
+So, what **tools** do we need to make a professional website?
+--
+<section style="text-align:center;">
+**blogdown**
+--
+<section style="text-align:center;">
+**hugo**
+
+```{r, eval=FALSE}
+install.packages("blogdown")
+blogdown::install_hugo(force = TRUE)
+blogdown::new_site(theme = "gcushen/hugo-academic", theme_example = TRUE)
+```
+---
+class:inverse
+
+#Back to Basics
+
+**Personalizing Hugo Academic Theme**
+
+.pull-left[
+Problem
+- _Remove “hero” widget_ 
+- _remove “demo” widget_
+- _edit title_
+- _edit theme_]
+
+.pull-right[
+Solution
+- _content/home/hero.md file + active = false_
+- _content/home/demo.md file + active= false_
+- _config.toml to edit title_
+- _config/_default/params.toml file to edit theme_]
+
+![image of themes drawing](https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80)
+
+---
+
+#So we go from "template" to "personalized"
+--
+<section style="text-align:left;">
+#like this!
+
+--
+![gif](https://media.giphy.com/media/kbbuGrr1da8Z3n8Knu/giphy.gif)
+--
+<section style="text-align:bottom;">
+
+but remember: it's a static site, it's NOT on the interwebs--just yet!
+---
+For way more details on all the personalisations: 
+
+- _see our .rmd file [here](https://github.com/dglassuw/making-websites-using-R)_
+- _contact us at the anthro-data-science [working group](https://anthro-data-science.github.io/)_
+- _check out the resources at the end of this slidedeck!_
+
+![image everyone codes](https://images.unsplash.com/photo-1526649661456-89c7ed4d00b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=871&q=80)
+---
+
+#So
+#Where to host our site?
+
+#Netlify!
+
+Drag and drop the "public" folder (anytime you make updates)
+
+
+![gif](https://media.giphy.com/media/QaT7Xe891SBvu3ThAe/giphy.gif)
+---
+class: inverse
+#Domains? 
+
+--
+
+Domain names can be purchased or you may change domain title and keep .netlify.com
+
+![gif](https://media.giphy.com/media/Vgqz5NTJN4tI5ONNbo/giphy.gif)
+
+Alternatives:
+- _[github](https://gist.github.com/TylerFisher/6127328)_
+- _[UW Server](https://itconnect.uw.edu/connect/web-publishing/shared-hosting/)_
+- _Your institutional Server_
+
+---
+
+#Thank you! 
+
+More resources from the real data science wizards:
+
+- _[blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/)_
+- _[Academic theme for Hugo](https://sourcethemes.com/academic/)_
+- _[Overwhelmed by Hugo academic theme: a beginner's guide](https://andreaczhang.rbind.io/post/my-1st-blogpost/)_
+- _[Up & Running with Blogdown](https://alison.rbind.io/post/2017-06-12-up-and-running-with-blogdown/)_
+- _Examples of [websites](https://awesome-blogdown.com/) using blogdown_
+
+![image of coffee+code](https://images.unsplash.com/flagged/photo-1556655678-9d4812e3fbe9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80)
+
+
+

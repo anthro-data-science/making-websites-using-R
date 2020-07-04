@@ -6,7 +6,7 @@ This workshop was based on materials prepared by [Alison Hill](https://alison.rb
 
 ### 1. Finding your way around R and RStudio (DG)
 - Check everyone could download and open R & RStudio
-- Check version numbers for R (we want 4.0.0)
+- Check version numbers for R (we want 4.0.2)
 - A brief tour of the main panes (Console, Files, Environ, text editor, pkgs and help) 
 - Have to make sure everyone can make the console work before we move on, e.g. console as a calculator 
 - Backup: https://rstudio.cloud/ with blogdown and hugo (note: need to set relativeurls = true in config.toml)
@@ -36,7 +36,7 @@ This workshop was based on materials prepared by [Alison Hill](https://alison.rb
 - Edit your publications, go to the files found in the content/publication/ folder. Each publication has a dedicated folder. To include your first publication, navigate to the content/publication/journal-article folder, and open up the index.md file.
 - Ordering sections: The order that the homepage sections are displayed in is defined by the weight parameter in each of the files in the content/home/ directory. The sections are displayed in ascending order of their weight, so you can simply edit the weight parameters as desired.
 
-### 7. Sharing your site with the world  (DM)
+### 7. Sharing your site with the world  (DG)
 - There are many ways, we will show the simplest
 just drag the public folder into Netlify within the "deploys" section of your admin settings. It should take about 5-10 seconds for your site to go live.
 - Change the site name to something meaningful in General -> site details -> change site name
