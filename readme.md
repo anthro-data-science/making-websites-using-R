@@ -37,7 +37,8 @@ This workshop was based on materials prepared by [Alison Hill](https://alison.rb
 - Ordering sections: The order that the homepage sections are displayed in is defined by the weight parameter in each of the files in the content/home/ directory. The sections are displayed in ascending order of their weight, so you can simply edit the weight parameters as desired.
 
 ### 7. Sharing your site with the world  (DG)
-- There are many ways, we will show the simplest
+- run `blogdown:::build_site()` run this in the console to update your public/ folder, which has the pages you want to serve on the internet
+- There are many ways to put your page online, we will show the simplest
 just drag the public folder into Netlify within the "deploys" section of your admin settings. It should take about 5-10 seconds for your site to go live.
 - Change the site name to something meaningful in General -> site details -> change site name
 - To update, go to “production deploys” -> “Drag and drop your site folder here”
